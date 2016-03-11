@@ -1,3 +1,4 @@
+'use strict';
 function loadMapping() {
   return {"0" : {"firstLine": "._.", "secondLine": "|.|", "thirdLine" : "|_|"},
     "1" : {"firstLine": "...", "secondLine": "..|", "thirdLine" : "..|"},
@@ -12,11 +13,11 @@ function loadMapping() {
 }
 
 function numberToLcdString (splitedNumberArr) {
-  var lcdStrFirstLine = "";
-  var lcdStrSecondLine = "";
-  var lcdStrThirdLine = "";
-  var lcdStr = "";
-  var mapping = loadMapping();
+  let lcdStrFirstLine = "";
+  let lcdStrSecondLine = "";
+  let lcdStrThirdLine = "";
+  let lcdStr = "";
+  let mapping = loadMapping();
 
   splitedNumberArr.forEach(function (splitedNumber, index) {
     if(index !== 2) {

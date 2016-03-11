@@ -1,10 +1,12 @@
-var splitNumber = require('../src/splitNumber.js');
-var numberToLcdString = require('../src/numberToLcdString.js');
-var printLcd = require('../src/printLcd.js');
+'use strict';
+
+let splitNumber = require('../src/splitNumber.js');
+let numberToLcdString = require('../src/numberToLcdString.js');
+let printLcd = require('../src/printLcd.js');
 
 function lcdPrint(input) {
-  var splitedNumber = splitNumber.splitNumber(input);
-  var lcdString = numberToLcdString.numberToLcdString(splitedNumber);
+  let splitedNumber = splitNumber.splitNumber(input);
+  let lcdString = numberToLcdString.numberToLcdString(splitedNumber);
   printLcd.printLcd(lcdString);
 }
 
