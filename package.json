@@ -4,7 +4,7 @@
   "description": "tw academy lcd test",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
